@@ -33,11 +33,6 @@ namespace WeCrab.Controllers
         {
             var movieId = getMovies().SingleOrDefault(m => m.Id == mId);
 
-            if (movieId == null)
-            {
-                HttpNotFound();
-            }
-
             return View(movieId);
         }
 
@@ -91,6 +86,5 @@ namespace WeCrab.Controllers
 
             return Content("Page index: " + pageIndex + " " + sortBy);
         }*/
-      
     }
 }

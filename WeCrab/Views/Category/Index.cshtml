@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WeCrab.Models.Category>
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kategorie</h2>
+
+@if (!Model.Any())
+{
+    <p>Nie ma jeszcze kategorii</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>Spis Kategorii</tr>
+        </thead>
+        <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(category.Name, "Details", "Category", new {i = category.Id},null)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
