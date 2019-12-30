@@ -179,9 +179,23 @@
     <Compile Include="Migrations\201912281322074_InitialMigration.Designer.cs">
       <DependentUpon>201912281322074_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912301147362_AddRelationshipToMovieAndCategory.cs" />
+    <Compile Include="Migrations\201912301147362_AddRelationshipToMovieAndCategory.Designer.cs">
+      <DependentUpon>201912301147362_AddRelationshipToMovieAndCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912301234466_UpdateIdentityModels.cs" />
+    <Compile Include="Migrations\201912301234466_UpdateIdentityModels.Designer.cs">
+      <DependentUpon>201912301234466_UpdateIdentityModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912301252364_AddDataToCategoryRev.cs" />
+    <Compile Include="Migrations\201912301252364_AddDataToCategoryRev.Designer.cs">
+      <DependentUpon>201912301252364_AddDataToCategoryRev.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryAndMovieRelation.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -271,6 +285,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912281322074_InitialMigration.resx">
       <DependentUpon>201912281322074_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912301147362_AddRelationshipToMovieAndCategory.resx">
+      <DependentUpon>201912301147362_AddRelationshipToMovieAndCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912301234466_UpdateIdentityModels.resx">
+      <DependentUpon>201912301234466_UpdateIdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912301252364_AddDataToCategoryRev.resx">
+      <DependentUpon>201912301252364_AddDataToCategoryRev.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

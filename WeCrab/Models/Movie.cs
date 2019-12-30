@@ -13,5 +13,6 @@ namespace WeCrab.Models
 
         public string Description { get; set; }
 
+        public virtual ICollection<CategoryAndMovieRelation> CategoryAndMovieRelations { get; set; }
     }
 }

@@ -112,3 +112,8 @@ C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.csprojAssemblyReference.ca
 C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.csproj.CopyComplete
 C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.dll
 C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.pdb
+C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.Migrations.InitialMigration.resources
+C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.csproj.GenerateResource.cache
+C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.Migrations.AddRelationshipToMovieAndCategory.resources
+C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.Migrations.UpdateIdentityModels.resources
+C:\Users\kamil\Desktop\WeCrab\WeCrab\obj\Debug\WeCrab.Migrations.AddDataToCategoryRev.resources

@@ -9,29 +9,31 @@ namespace WeCrab.Controllers
 {
     public class CategoryController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public CategoryController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         // GET: Category
         public ActionResult Index()
         {
-            var categoryModel = getCategories();
+            var categoryModel = _context.Category.ToList();
 
             return View(categoryModel);
         }
 
-        private IEnumerable<Category> getCategories()
-        {
-            var categories = new List<Category>
-            {
-                new Category {Id = 1, Name = "Komedia"},
-                new Category {Id = 2, Name = "Dramat"}
-            };
-            return categories;
-        }
 
         public ActionResult Details(int i)
         {
-            var categoryId = getCategories().SingleOrDefault(element => element.Id == i);
+            var categoryId = _context.Category.SingleOrDefault(element => element.Id == i);
             return View(categoryId);
-            
         }
     }
 }

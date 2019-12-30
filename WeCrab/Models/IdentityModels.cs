@@ -20,6 +20,12 @@ namespace WeCrab.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Category> Category { get; set; }
+
+        public DbSet<Movie> Movie { get; set; }
+
+        public DbSet<CategoryAndMovieRelation> CategoryAndMovie { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
